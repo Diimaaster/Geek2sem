@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="Вторая активити"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor ="#794fa7"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="1000dp" />
+    <RadioGroup
+        android:id="@+id/radioButtons"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCancel"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButtonMyCoolStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cool Style"
+            style="@style/NumberButton"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonMyCoolStyle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cool Style2"
+            style="@style/NumberButton"
+            />
+
+    </RadioGroup>
+    <Button
+    android:id="@+id/btnReturn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Закрыть это активити"
+        style="@style/Style"/>
+
+
+
+</LinearLayout>
